@@ -1,0 +1,29 @@
+title: "Thaddeus Pearson - IT Engineer"
+description: "IT Engineer | Systems | Linux | Automation"
+baseurl: "" # leave empty for user.github.io domain
+url: "https://pearson-thaddeus-l.github.io"
+theme: minima
+author:
+  name: "Thaddeus L. Pearson"
+  email: "thaddeus@imap.cc"
+
+# Include assets and markdown pages
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Navbar menu links
+navigation:
+  - name: "Home"
+    link: "/"
+  - name: "About"
+    link: "/about/"
+  - name: "Projects"
+    link: "/projects/"
+  - name: "Certifications"
+    link: "/certifications/"
+
