@@ -37,3 +37,41 @@ nav ul li {
   padding: 2em;
 }
 
+.hero-center {
+  text-align: center;
+  margin-top: 6rem; /* adjust this number to move it up or down */
+  font-size: 1.8rem;
+  color: #00ffff;
+  text-shadow: 0 0 8px #00ffff, 0 0 25px #00ffff;
+}
+
+.hero-name {
+  text-align: center;
+  font-size: 3rem;
+  color: #00ffff;
+  text-shadow: 0 0 15px #00ffff, 0 0 30px #00ffff;
+  margin-top: 4rem;
+}
+
+.neon-border {
+  position: relative;
+  border: 2px solid #00ffff;
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 3rem auto;
+  max-width: 800px;
+  box-shadow: 0 0 10px #00ffff, 0 0 40px #00ffff inset;
+  animation: glowBorder 4s ease-in-out infinite alternate;
+}
+
+@keyframes glowBorder {
+  from {
+    box-shadow: 0 0 8px #00ffff, 0 0 30px #00ffff inset;
+    border-color: #00ffff;
+  }
+  to {
+    box-shadow: 0 0 25px #00ffff, 0 0 60px #00ffff inset;
+    border-color: #00e6e6;
+  }
+}
+
