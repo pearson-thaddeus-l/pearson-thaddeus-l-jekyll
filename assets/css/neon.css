@@ -75,3 +75,22 @@ nav ul li {
   }
 }
 
+.neon-border {
+  border: 2px solid #0ff;
+  border-radius: 10px;
+  box-shadow:
+    0 0 5px #0ff,
+    0 0 10px #0ff,
+    0 0 20px #0ff,
+    0 0 40px #0ff;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8); /* subtle contrast background */
+}
+
+.headline {
+  color: #0ff;
+  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
