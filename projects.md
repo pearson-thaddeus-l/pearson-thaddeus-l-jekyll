@@ -7,7 +7,7 @@ permalink: /projects/
 <h2 class="headline">Featured Projects</h2>
 
 <p>
-Welcome to my portfolio of featured work — a mix of completed builds, active automation, and ongoing experiments that reflect my approach to systems engineering and creative problem solving.
+Welcome to my portfolio of featured work — a mix of completed builds, active automation, and ongoing experiments that reflect my approach to systems engineering..
 </p>
 
 <div class="neon-border project-card">
