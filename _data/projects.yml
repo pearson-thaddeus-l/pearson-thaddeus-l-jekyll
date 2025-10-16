@@ -1,0 +1,40 @@
+- name: Proxmox VM Auto-Builder
+  status: Active
+  tech: [Bash, Ansible, Proxmox API]
+  summary: Automates VM provisioning on a Proxmox cluster using YAML-driven playbooks.
+  highlights:
+    - Creates, networks, and configures VMs automatically
+    - Integrates with Proxmox API for orchestration
+    - Logs tasks and results locally for review
+  next: Add Flask-based dashboard and SSH key deployment
+  repo: https://github.com/pearson-thaddeus-l/proxmox-auto-builder
+
+- name: Rex Digital Library
+  status: Active
+  tech: [macOS, NFS, Bash]
+  summary: Cross-platform automount library that mounts a shared NAS via vifs and auto_master.
+  highlights:
+    - macOS automount integration for Linux storage
+    - Secure NFS permissions and automount control
+  next: Add GUI toggle for mounts and status
+  repo: https://github.com/pearson-thaddeus-l/rex-digital-library
+
+- name: pearson-thaddeus-l.github.io
+  status: Completed
+  tech: [Jekyll, HTML, CSS, GitHub Actions]
+  summary: Personal IT engineering portfolio with a neon aesthetic and CI/CD GitHub Pages deployment.
+  highlights:
+    - Fully custom theme
+    - Automatic build and deployment via GitHub Actions
+    - Neon glow styling with animated borders
+  next: Add dynamic “Projects” content from YAML (done!)
+
+- name: IoT Water Pump Automation
+  status: Planned
+  tech: [ESP32, Python, MQTT, Node-RED]
+  summary: IoT experiment to control a water pump remotely using cron jobs and API calls.
+  highlights:
+    - ESP32-controlled relay and Wi-Fi integration
+    - REST API for manual and automated control
+  next: Build dashboard and mobile status view
+

@@ -94,3 +94,24 @@ nav ul li {
   letter-spacing: 1px;
 }
 
+.project-card {
+  margin: 3rem auto;
+  max-width: 800px;
+  text-align: left;
+}
+
+.project-card h3 {
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff;
+  margin-bottom: 0.5rem;
+}
+
+.project-card ul {
+  list-style-type: square;
+  margin-left: 1.5rem;
+}
+
+.project-card li {
+  margin-bottom: 0.3rem;
+}
+
