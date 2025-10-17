@@ -1,3 +1,5 @@
+/* ===== Thaddeus Pearson Neon Theme (static) ===== */
+
 body {
   background-color: #0a0a0a;
   color: #e0e0e0;
@@ -7,10 +9,11 @@ body {
   padding: 0;
 }
 
+/* ===== Links ===== */
 a {
   color: #00ffff;
   text-decoration: none;
-  transition: 0.3s;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 a:hover {
@@ -18,7 +21,9 @@ a:hover {
   text-shadow: 0 0 5px #ff00ff, 0 0 10px #00ffff;
 }
 
-header, footer {
+/* ===== Layout ===== */
+header,
+footer {
   padding: 1em 0;
   background: #111;
 }
@@ -26,6 +31,7 @@ header, footer {
 nav ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 nav ul li {
@@ -37,14 +43,7 @@ nav ul li {
   padding: 2em;
 }
 
-.hero-center {
-  text-align: center;
-  margin-top: 6rem; /* adjust this number to move it up or down */
-  font-size: 1.8rem;
-  color: #00ffff;
-  text-shadow: 0 0 8px #00ffff, 0 0 25px #00ffff;
-}
-
+/* ===== Hero Section ===== */
 .hero-name {
   text-align: center;
   font-size: 3rem;
@@ -53,40 +52,31 @@ nav ul li {
   margin-top: 4rem;
 }
 
-.neon-border {
-  position: relative;
-  border: 2px solid #00ffff;
-  border-radius: 12px;
-  padding: 2rem;
-  margin: 3rem auto;
-  max-width: 800px;
-  box-shadow: 0 0 10px #00ffff, 0 0 40px #00ffff inset;
-  animation: glowBorder 4s ease-in-out infinite alternate;
+.hero-center {
+  text-align: center;
+  margin-top: 6rem; /* adjust spacing under name */
+  font-size: 1.8rem;
+  color: #00ffff;
+  text-shadow: 0 0 8px #00ffff, 0 0 25px #00ffff;
 }
 
-@keyframes glowBorder {
-  from {
-    box-shadow: 0 0 8px #00ffff, 0 0 30px #00ffff inset;
-    border-color: #00ffff;
-  }
-  to {
-    box-shadow: 0 0 25px #00ffff, 0 0 60px #00ffff inset;
-    border-color: #00e6e6;
-  }
-}
-
+/* ===== Neon Border (Static, Non-Animated) ===== */
 .neon-border {
   border: 2px solid #0ff;
   border-radius: 10px;
   box-shadow:
-    0 0 5px #0ff,
     0 0 10px #0ff,
-    0 0 20px #0ff,
-    0 0 40px #0ff;
+    0 0 25px #00ccff,
+    0 0 40px #0099ff;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.8); /* subtle contrast background */
+  background-color: rgba(0, 0, 0, 0.8);
+  /* permanently disable any animation or transition */
+  animation: none !important;
+  -webkit-animation: none !important;
+  transition: none !important;
 }
 
+/* ===== Typography ===== */
 .headline {
   color: #0ff;
   text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
@@ -94,6 +84,7 @@ nav ul li {
   letter-spacing: 1px;
 }
 
+/* ===== Projects Section ===== */
 .project-card {
   margin: 3rem auto;
   max-width: 800px;
@@ -114,4 +105,9 @@ nav ul li {
 .project-card li {
   margin-bottom: 0.3rem;
 }
+
+/* ===== Global Reset for Safety ===== */
+.neon-border,
+.neon-border * {
+  animation: none !import
 
