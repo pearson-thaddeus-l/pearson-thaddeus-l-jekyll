@@ -1,4 +1,4 @@
-/* ===== Thaddeus Pearson Neon Theme (static) ===== */
+/* === Thaddeus Pearson Neon Theme (Solid Cyan, No Animation) === */
 
 body {
   background-color: #0a0a0a;
@@ -15,7 +15,6 @@ a {
   text-decoration: none;
   transition: color 0.3s ease, text-shadow 0.3s ease;
 }
-
 a:hover {
   color: #ff00ff;
   text-shadow: 0 0 5px #ff00ff, 0 0 10px #00ffff;
@@ -27,18 +26,15 @@ footer {
   padding: 1em 0;
   background: #111;
 }
-
 nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
 nav ul li {
   display: inline;
   margin: 0 10px;
 }
-
 .content {
   padding: 2em;
 }
@@ -48,38 +44,40 @@ nav ul li {
   text-align: center;
   font-size: 3rem;
   color: #00ffff;
-  text-shadow: 0 0 15px #00ffff, 0 0 30px #00ffff;
-  margin-top: 4rem;
+  text-shadow:
+    0 0 10px #00ffff,
+    0 0 25px #00ffff;
+  margin-top: 2rem;
 }
 
 .hero-center {
   text-align: center;
-  margin-top: 6rem; /* adjust spacing under name */
+  margin-top: 2rem;
   font-size: 1.8rem;
   color: #00ffff;
-  text-shadow: 0 0 8px #00ffff, 0 0 25px #00ffff;
+  text-shadow:
+    0 0 8px #00ffff,
+    0 0 20px #00ffff;
 }
 
-/* ===== Neon Border (Static, Non-Animated) ===== */
+/* ===== Neon Border (Static Cyan Glow, Centered Layout) ===== */
 .neon-border {
-  border: 2px solid #0ff;
+  border: 2px solid #00ffff;
   border-radius: 10px;
   box-shadow:
-    0 0 10px #0ff,
-    0 0 25px #00ccff,
-    0 0 40px #0099ff;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.8);
-  /* permanently disable any animation or transition */
-  animation: none !important;
-  -webkit-animation: none !important;
-  transition: none !important;
+    0 0 8px #00ffff,
+    0 0 20px #00ffff,
+    0 0 35px #00ffff;
+  padding: 40px 20px;
+  background-color: rgba(0, 0, 0, 0.85);
+  max-width: 900px;
+  margin: 4rem auto; /* centers entire main content block */
 }
 
 /* ===== Typography ===== */
 .headline {
-  color: #0ff;
-  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
   font-weight: 600;
   letter-spacing: 1px;
 }
@@ -90,24 +88,33 @@ nav ul li {
   max-width: 800px;
   text-align: left;
 }
-
 .project-card h3 {
   color: #00ffff;
   text-shadow: 0 0 10px #00ffff;
   margin-bottom: 0.5rem;
 }
-
 .project-card ul {
   list-style-type: square;
   margin-left: 1.5rem;
 }
-
 .project-card li {
   margin-bottom: 0.3rem;
 }
 
-/* ===== Global Reset for Safety ===== */
+/* ===== Defensive Global Reset ===== */
+*,
+*::before,
+*::after {
+  animation: none !important;
+  transition: none !important;
+}
+
+/* --- Force static compositing for glowing elements --- */
 .neon-border,
-.neon-border * {
-  animation: none !import
+.hero-image img {
+  will-change: auto !important;
+  transform: none !important;
+  backface-visibility: hidden !important;
+  filter: brightness(1.0) !important;
+}
 
