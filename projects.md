@@ -11,6 +11,20 @@ Welcome to my portfolio of featured work — a mix of completed builds, active a
 </p>
 
 <div class="neon-border project-card">
+  <h3>Datacenter Storage Migrations</h3>
+  <p>
+    A 13+ month project involving migration of production SAN data and storage infrastructure. This included NetApp clusters, volumes, NFS and CIFS shares, LIFS, DNS, and custom scripts. We leveraged rsync and AWS to reduce the amount of data needing to be migrated from site to site. These custom scripts involved using AWS datasync. In addition to migrating to the new Datacenter, we also implemented AWS FSxN in this time, basically creating an ONTAP cluster in AWS, and serving NFS and CIFS to an on-prem network. From a customer perspective, SMB shares show up the same way as on-prem storage backing. This storage can also be presented using the same paths on different networks across the WAN. 
+  </p>
+  <p><strong>Tech:</strong> Bash, Proxmox API, YAML</p>
+  <ul>
+    <li>Creates and networks new VMs from predefined templates</li>
+    <li>Integrates with Proxmox API for lightweight orchestration</li>
+    <li>Logs provisioning events and task output for auditing</li>
+  </ul>
+  <p><a href="https://github.com/pearson-thaddeus-l/proxmox-auto-builder" target="_blank" class="neon-button">View Repo</a></p>
+</div>
+
+<div class="neon-border project-card">
   <h3>Proxmox Homelab Automation</h3>
   <p>
     Automates provisioning and lifecycle management of VMs on a Proxmox cluster using Bash scripts and YAML configurations.
