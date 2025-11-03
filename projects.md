@@ -15,11 +15,11 @@ Welcome to my portfolio of featured work — a mix of completed builds, active a
   <p>
     A 13+ month project involving migration of production SAN data and storage infrastructure. This included NetApp clusters, volumes, NFS and CIFS shares, LIFS, SVMs, Export Policies, and more. Leveraged rsync and AWS to reduce the amount of data needing to be migrated from site to site. Used SaltStack, Nagios, Icinga2, NetApp AIQUM, and ONTAP during migration windows.
   </p>
-  <p><strong>Tech:</strong> Bash, Proxmox API, YAML</p>
+  <p><strong>Tech:</strong> ONTAP, NFS, CIFS, SAN Infrastructure, Scripting</p>
   <ul>
-    <li>Creates and networks new VMs from predefined templates</li>
-    <li>Integrates with Proxmox API for lightweight orchestration</li>
-    <li>Logs provisioning events and task output for auditing</li>
+    <li>Performed orchestrated production migrations of prod data between sites.</li>
+    <li>Seeded data payloads between volumes ahead of time to automate the cut-overs.</li>
+    <li>Manage NAS, Scripting, and Automation Linux servers in planning and orchestrating production cut-overs.</li>
   </ul>
   <p><a href="https://github.com/pearson-thaddeus-l/proxmox-auto-builder" target="_blank" class="neon-button">View Repo</a></p>
 </div>
