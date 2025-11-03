@@ -17,9 +17,9 @@ Welcome to my portfolio of featured work — a mix of completed builds, active a
   </p>
   <p><strong>Tech:</strong> ONTAP, NFS, CIFS, SAN Infrastructure, Scripting</p>
   <ul>
-    <li>Performed orchestrated production migrations of prod data between sites.</li>
-    <li>Seeded data payloads between volumes ahead of time to automate the cut-overs.</li>
-    <li>Manage NAS, Scripting, and Automation Linux servers in planning and orchestrating production cut-overs.</li>
+    <li>Performed production migrations of prod data between sites.</li>
+    <li>Seeded data payloads between volumes ahead of time to automate cut-overs.</li>
+    <li>Manage NAS, Scripting, and Automation Linux servers in planning and executing production cut-overs.</li>
   </ul>
   <p><a href="https://github.com/pearson-thaddeus-l/proxmox-auto-builder" target="_blank" class="neon-button">View Repo</a></p>
 </div>
