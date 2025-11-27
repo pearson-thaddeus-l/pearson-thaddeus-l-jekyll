@@ -11,6 +11,20 @@ Welcome to my portfolio of featured work — a mix of completed builds, active a
 </p>
 
 <div class="neon-border project-card">
+  <h3>Backblaze B2 Offsite Data Protection</h3>
+  <p>
+    Data Protection project to implement off-site backup of on-prem NAS storage server. In Progress.
+  </p>
+  <p><strong>Tech:</strong> Backblaze B2 Cloud Storage, Synology NAS, In Progress</p>
+  <ul>
+    <li>In Progress</li>
+    <li>In Progress</li>
+    <li>In Progress</li>
+  </ul>
+  <p><a href="https://github.com/pearson-thaddeus-l/Backblaze" target="_blank" class="neon-button">View Repo</a></p>
+</div>
+
+<div class="neon-border project-card">
   <h3>Datacenter Storage Migrations</h3>
   <p>
     A 13+ month project involving migration of production SAN data and storage infrastructure. This included NetApp clusters, volumes, NFS and CIFS shares, LIFS, SVMs, Export Policies, and more. Leveraged rsync and AWS to reduce the amount of data needing to be migrated from site to site. Used SaltStack, Nagios, Icinga2, NetApp AIQUM, and ONTAP during migration windows.
