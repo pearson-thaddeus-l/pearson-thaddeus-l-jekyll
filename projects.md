@@ -27,9 +27,9 @@ Welcome to my portfolio of featured work — a mix of completed builds, active a
 <div class="neon-border project-card">
   <h3>Datacenter Storage Migrations</h3>
   <p>
-    A 13+ month project involving migration of production SAN data and storage infrastructure. This included NetApp clusters, volumes, NFS and CIFS shares, LIFS, SVMs, Export Policies, and more. Leveraged rsync and AWS to reduce the amount of data needing to be migrated from site to site. Used SaltStack, Nagios, Icinga2, NetApp AIQUM, and ONTAP during migration windows.
+    A 13+ month project involving migration of production SAN data and storage infrastructure. This included NetApp clusters, volumes, NFS and CIFS shares, LIFS, SVMs, Export Policies, and more. Leveraged rsync and AWS to reduce the amount of data needing to be migrated from site to site.
   </p>
-  <p><strong>Tech:</strong> ONTAP, NFS, CIFS, SAN Infrastructure, Scripting</p>
+  <p><strong>Tech:</strong> ONTAP, rsync, NFS, CIFS, SAN, Scripting, SaltStack, AIQUM, Nagios, Icinga2</p>
   <ul>
     <li>Performed production migrations of prod data between sites.</li>
     <li>Seeded data payloads between volumes ahead of time to automate cut-overs.</li>
