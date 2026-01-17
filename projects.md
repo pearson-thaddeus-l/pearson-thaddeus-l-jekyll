@@ -15,11 +15,12 @@ Welcome to my portfolio of featured work — a mix of completed builds, active a
   <p>
     Data Protection project to implement off-site backup of on-prem NAS storage server. In Progress.
   </p>
-  <p><strong>Tech:</strong> Backblaze B2 Cloud Storage, Synology NAS, In Progress</p>
+  <p><strong>Tech:</strong> Backblaze B2 Cloud Storage, Synology NAS, HyperBackup, API Configurations.</p>
   <ul>
-    <li>In Progress</li>
-    <li>In Progress</li>
-    <li>In Progress</li>
+    <li>Configured Synology NAS software "HyperBackup" to use client side encryption before pushing out a full backup of NAS data to 
+backblaze B2.</li>
+    <li>Backblaze B2 bucket and application API configuration with HyperBackup software. Including nightly incrementals.</li>
+    <li>Successful restore testing performed on local storage environment.</li>
   </ul>
   <p><a href="https://github.com/pearson-thaddeus-l/Backblaze" target="_blank" class="neon-button">View Repo</a></p>
 </div>
