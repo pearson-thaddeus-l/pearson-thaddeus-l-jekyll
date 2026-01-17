@@ -35,7 +35,6 @@ backblaze B2.</li>
     <li>Seeded data payloads between volumes ahead of time to automate cut-overs.</li>
     <li>Manage NAS, Scripting, and Automation Linux servers in planning and executing production cut-overs.</li>
   </ul>
-  <p><a href="https://github.com/pearson-thaddeus-l/proxmox-auto-builder" target="_blank" class="neon-button">View Repo</a></p>
 </div>
 
 <div class="neon-border project-card">
@@ -77,6 +76,5 @@ backblaze B2.</li>
     <li>Scheduled tasks via Linux cron automation</li>
     <li>Future integration with Node-RED dashboard</li>
   </ul>
-  <p><a href="#" class="neon-button">Coming Soon</a></p>
 </div>
 
