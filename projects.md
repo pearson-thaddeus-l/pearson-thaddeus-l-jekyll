@@ -48,7 +48,6 @@ backblaze B2.</li>
     <li>Integrates with Proxmox API for lightweight orchestration</li>
     <li>Logs provisioning events and task output for auditing</li>
   </ul>
-  <p><a href="https://github.com/pearson-thaddeus-l/proxmox-auto-builder" target="_blank" class="neon-button">View Repo</a></p>
 </div>
 
 <div class="neon-border project-card">
