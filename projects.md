@@ -61,7 +61,7 @@ backblaze B2.</li>
     <li>Deployed automatically through GitHub Actions</li>
     <li>Optimized for clean navigation and responsive design</li>
   </ul>
-  <p><a href="https://github.com/pearson-thaddeus-l/pearson-thaddeus-l.github.io" target="_blank" class="neon-button">View Repo</a></p>
+  <p><a href="https://github.com/pearson-thaddeus-l/pearson-thaddeus-l-jekyll" target="_blank" class="neon-button">View Repo</a></p>
 </div>
 
 <div class="neon-border project-card">
