@@ -12,7 +12,7 @@ title: Home
 </div>
 
 <div class="hero-center">
-  Linux | Engineering | Automation | Storage
+  ~/Linux ~/Engineering ~/Automation ~/Storage
 </div>
 
 <p class="intro-text">
