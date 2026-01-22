@@ -10,7 +10,9 @@ I'm an IT Engineer specializing in **Linux systems, data protection, and automat
 I build and maintain robust systems — from on-prem to cloud — with an emphasis on security, efficiency, and scalability.
 
 Here is a brief highlight of some of the things I work with most often:
+
 <div align="center">
+
 - openSSL
 - salt stack
 - nagios
@@ -35,4 +37,5 @@ Here is a brief highlight of some of the things I work with most often:
 - RT Administration
 - AWS S3/Deep Glacier archiving and recovery
 - NetApp ONTAP/AIQUM/console.netapp.com/System Manager
+
 </div>
