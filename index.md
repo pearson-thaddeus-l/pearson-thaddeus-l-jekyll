@@ -12,7 +12,7 @@ title: Home
 </div>
 
 <div class="hero-center">
-  ~/Linux | Engineering | Portfolio
+  ~/Linux | Engineering > Portfolio
 </div>
 
 <p class="intro-text">
