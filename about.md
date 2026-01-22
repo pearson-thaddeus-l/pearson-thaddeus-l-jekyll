@@ -13,9 +13,10 @@ Here is a brief highlight of some of the things I work with most often:
 
 <div align="center">
 
-- openSSL
-- salt stack
-- nagios
+<ul>
+  <li>openSSL</li>
+  <li>salt stack</li>
+  <li>nagios</li>
 - icinga2
 - git/github
 - PKI Administration
@@ -37,5 +38,6 @@ Here is a brief highlight of some of the things I work with most often:
 - RT Administration
 - AWS S3/Deep Glacier archiving and recovery
 - NetApp ONTAP/AIQUM/console.netapp.com/System Manager
+</ul>
 
 </div>
