@@ -24,7 +24,7 @@ Here is a brief highlight of some of the things I work with most often:
   <li>DNS - Internal/External</li>
   <li>github actions and workflows</li>
   <li>CI/CD web development</li>
-  <li>Rubrik data protection - RSC/CDM/NASCD</li>
+  <li>Rubrik - RSC/CDM/NASCD</li>
   <li>AWS FSxN Storage</li>
   <li>Pure Storage Flashblade/AFF</li>
   <li>NetBackup</li>
