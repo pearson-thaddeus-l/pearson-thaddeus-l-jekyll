@@ -37,7 +37,7 @@ Here is a brief highlight of some of the things I work with most often:
   <li>Jira/Confluence/JSM</li>
   <li>RT Administration</li>
   <li>AWS S3/Deep Glacier archive and recovery</li>
-  <li>NetApp ONTAP/AIQUM/console.netapp.com/System Manager</li>
+  <li>NetApp ONTAP/AIQUM/System Manager</li>
 </ul>
 
 </div>
