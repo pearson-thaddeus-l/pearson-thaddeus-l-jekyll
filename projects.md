@@ -7,7 +7,7 @@ permalink: /projects/
 <h2 class="headline">Featured Projects</h2>
 
 <p>
-Welcome to my portfolio of featured work — a mix of builds, active automation, and ongoing experiments.
+testWelcome to my portfolio of featured work — a mix of builds, active automation, and ongoing experiments.
 </p>
 
 <div class="neon-border project-card">
