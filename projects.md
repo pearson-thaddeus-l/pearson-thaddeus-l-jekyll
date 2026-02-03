@@ -11,6 +11,19 @@ Welcome to my portfolio of featured work — a mix of builds, active automation,
 </p>
 
 <div class="neon-border project-card">
+  <h3>SaltStack Infrastructure</h3>
+  <p>
+   Build, configure, and implement SaltStack infrastructure.
+  </p>
+  <p><strong>Tech:</strong> SaltStack, Proxmox, Alma Linux.</p>
+  <ul>
+    <li>In Progress.</li>
+    <li>In Progress.</li>
+    <li>In Progress.</li>
+  </ul>
+</div>
+
+<div class="neon-border project-card">
   <h3>Hubitat Home Automation</h3>
   <p>
    Design and implement a secure home automation system using Hubitat hardware and Zigbee mesh networking.
