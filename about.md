@@ -15,9 +15,9 @@ Here is a brief highlight of some of the things I work with most often:
 
 <ul>
   <li>openSSL</li>
-  <li>salt stack</li>
-  <li>nagios</li>
-  <li>icinga2</li>
+  <li>SaltStack</li>
+  <li>Nagios</li>
+  <li>Icinga2</li>
   <li>git/github</li>
   <li>PKI Administration</li>
   <li>SSL certificates</li>
