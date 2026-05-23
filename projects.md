@@ -11,6 +11,21 @@ Welcome to my portfolio of featured work — a mix of builds, active automation,
 </p>
 
 <div class="neon-border project-card">
+  <h3>Home Network Infrastructure & Firewall Architecture</h3>
+  <p>
+   Designed and implemented a segmented home network using OPNsense as the primary router and firewall, running virtualized on a Proxmox host. The project involved full network architecture design including subnet segmentation, inter-VLAN routing, DNS filtering, and DHCP services - built to mirror enterprise networking practices in a home lab environment.
+  </p>
+  <p><strong>Tech:</strong> OPNsense,Proxmox VE,KEA DHCPv4,Pi-hole,DNS,Static Routing,Network Segmentation</p>
+  <ul>
+    <li>Deployed OPNsense as a VM on Proxmox with dedicated WAN and LAN bridge interfaces, replacing a consumer router for core routing and firewall duties.</li>
+    <li>Architected a segmented network with a dedicated LAN subnet (10.x.x.x/24) isolated from the upstream ISP network, with a static route on the Synology router directing LAN-bound traffic through the OPNsense WAN interface.</li>
+    <li>Configured KEA DHCPv4 on the OPNsense LAN to manage address allocation across the 10.x.x.100 - 200 pool with static reservations for infrastructure hosts.</li>
+  </ul>
+    <li>Integrated Pi-hole as the primary DNS server for the LAN, enforcing network-wide ad and tracker blocking with Cloudflare as the upstream fallback resolver.</li>
+    <li>Established inter-VLAN routing and firewall rules through OPNsense to control traffic flow between the virtualized LAN environment and the broader home network.</li>
+</div>
+
+<div class="neon-border project-card">
   <h3>Hubitat Home Automation</h3>
   <p>
    Design and implement a secure home automation system using Hubitat hardware and Zigbee mesh networking.
