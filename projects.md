@@ -20,9 +20,9 @@ Welcome to my portfolio of featured work — a mix of builds, active automation,
     <li>Deployed OPNsense as a VM on Proxmox with dedicated WAN and LAN bridge interfaces, replacing a consumer router for core routing and firewall duties.</li>
     <li>Architected a segmented network with a dedicated LAN subnet (10.x.x.x/24) isolated from the upstream ISP network, with a static route on the Synology router directing LAN-bound traffic through the OPNsense WAN interface.</li>
     <li>Configured KEA DHCPv4 on the OPNsense LAN to manage address allocation across the 10.x.x.100 - 200 pool with static reservations for infrastructure hosts.</li>
-  </ul>
     <li>Integrated Pi-hole as the primary DNS server for the LAN, enforcing network-wide ad and tracker blocking with Cloudflare as the upstream fallback resolver.</li>
     <li>Established inter-VLAN routing and firewall rules through OPNsense to control traffic flow between the virtualized LAN environment and the broader home network.</li>
+  </ul>
 </div>
 
 <div class="neon-border project-card">
