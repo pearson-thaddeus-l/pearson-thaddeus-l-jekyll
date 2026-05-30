@@ -6,8 +6,8 @@ permalink: /certifications/
 
 ## Certifications
 
-- MCSA
-- MCP
+- Microsoft Certified Solutions Associate
+- Microsoft Certified Professional
 - NetApp ONTAP Cluster Fundamentals
 - NetApp ONTAP NAS Fundamentals
 - Freecodecamp Web Development
