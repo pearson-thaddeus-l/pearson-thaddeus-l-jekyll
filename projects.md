@@ -109,16 +109,3 @@ backblaze B2.</li>
   </ul>
 </div>
 
-<div class="neon-border project-card">
-  <h3>IoT Water Pump Controller</h3>
-  <p>
-    A Raspberry Pi–based IoT controller that manages a water pump via Wi-Fi and scheduled cron jobs. The goal is to build a smart automation layer for local environmental control.
-  </p>
-  <p><strong>Tech:</strong> Raspberry Pi, Python, Cron, MQTT</p>
-  <ul>
-    <li>Wi-Fi controlled GPIO relay for water pump</li>
-    <li>Scheduled tasks via Linux cron automation</li>
-    <li>Future integration with Node-RED dashboard</li>
-  </ul>
-</div>
-
