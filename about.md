@@ -4,56 +4,44 @@ title: "About"
 permalink: /about/
 ---
 
-## About Me
+<h2 class="headline">About Me</h2>
 
-An IT Engineer specializing in **Linux systems, data protection, and automation**.
-I build and maintain robust systems — from on-prem to cloud — with an emphasis on security, efficiency, and scalability.
+<div class="neon-border project-card">
+  <p>
+    An IT Engineer specializing in <strong>Linux systems, data protection, and automation</strong>.
+    I build and maintain robust systems from on-prem to cloud with an emphasis on security,
+    efficiency, and scalability.
+  </p>
+</div>
 
-## Technologies & Skills
+<h2 class="headline">Technologies & Skills</h2>
 
-### Scripting & Automation
-- Bash scripting
-- Python scripting
-- PowerShell scripting
-- GitHub Actions & CI/CD workflows
+<div class="neon-border project-card">
+  <h3>Scripting & Automation</h3>
+  <p>Bash, Python, PowerShell, GitHub Actions & CI/CD</p>
 
-### Infrastructure & Configuration Management
-- SaltStack (IaC / config management)
-- Git / GitHub
-- LVM (logical volume management)
+  <h3>Infrastructure & Configuration Management</h3>
+  <p>SaltStack, Git / GitHub, LVM</p>
 
-### Linux & OS
-- RHEL / AlmaLinux
-- Debian / Ubuntu
-- Parrot OS
-- LXC / Proxmox virtualization
+  <h3>Linux & OS</h3>
+  <p>RHEL / AlmaLinux, Debian / Ubuntu, Parrot OS, LXC / Proxmox</p>
 
-### Networking & DNS
-- OPNsense firewall & routing
-- Pi-hole DNS filtering
-- DNS — internal & external
+  <h3>Networking & DNS</h3>
+  <p>OPNsense, Pi-hole, Internal & External DNS</p>
 
-### Security & PKI
-- OpenSSL
-- PKI administration
-- SSL/TLS certificate lifecycle management
+  <h3>Security & PKI</h3>
+  <p>OpenSSL, PKI Administration, SSL/TLS Certificate Lifecycle Management</p>
 
-### Monitoring & Observability
-- Nagios
-- Icinga2
+  <h3>Monitoring & Observability</h3>
+  <p>Nagios, Icinga2</p>
 
-### Storage & Data Protection
-- NetApp ONTAP / AIQUM / System Manager
-- Rubrik — RSC / CDM / NAS CD
-- Pure Storage FlashBlade / AFF
-- AWS FSxN
-- AWS S3 / Glacier archival & recovery
-- AWS DataSync
-- NetBackup
+  <h3>Storage & Data Protection</h3>
+  <p>NetApp ONTAP / AIQUM / System Manager, Rubrik RSC / CDM / NAS CD,
+     Pure Storage FlashBlade / AFF, AWS FSxN, AWS S3 / Glacier, AWS DataSync, NetBackup</p>
 
-### Cloud
-- AWS (S3, FSxN, DataSync, Glacier)
+  <h3>Cloud</h3>
+  <p>AWS (S3, FSxN, DataSync, Glacier)</p>
 
-### ITSM & Collaboration
-- Jira / Confluence / JSM
-- Request Tracker (RT) administration
+  <h3>ITSM & Collaboration</h3>
+  <p>Jira / Confluence / JSM, Request Tracker (RT)</p>
+</div>
