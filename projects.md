@@ -18,7 +18,6 @@ Welcome to my portfolio of featured work — a mix of builds, active automation,
   <p><strong>Tech:</strong> Synology RT6600ax, Synology DNS Server, BIND9 (underlying), DHCPv4, DNS Forward Zone, Proxmox VE</p>
   <ul>
     <li>Evaluated DNS hosting options including a dedicated Proxmox LXC running BIND9, the Synology NAS, and the Synology RT6600ax router selected the router as the DNS host to ensure DNS availability is fully independent of Proxmox uptime, a critical consideration when DNS is required to bring cluster nodes online.</li>
-    <li>Simplified the lab network from a segmented dual-subnet architecture (OPNsense-routed 10.0.0.x LAN + 192.168.1.x WAN) to a flat lab network network after decommissioning OPNsense and Pi-hole, requiring a full reassignment of all host IPs prior to DNS implementation.</li>
     <li>Configured DHCP reservations on the RT6600ax for all infrastructure hosts in Proxmox ensuring stable IP assignments across reboots and DHCP lease renewals.</li>
     <li>Updated DHCP scope options to distribute the new DNS server as the primary DNS server and 8.8.8.8 as the secondary fallback, with domain name set as the local domain name handed to all clients.</li>
     <li>Installed the Synology DNS Server package on the RT6600ax and created a master forward zone for domain name, with A records for all infrastructure hosts and the Proxmox cluster nodes including the planned new node.</li>
