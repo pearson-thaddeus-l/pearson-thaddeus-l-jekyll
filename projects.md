@@ -22,7 +22,6 @@ Welcome to my portfolio of featured work — a mix of builds, active automation,
     <li>Updated DHCP scope options to distribute the new DNS server as the primary DNS server and 8.8.8.8 as the secondary fallback, with domain name set as the local domain name handed to all clients.</li>
     <li>Installed the Synology DNS Server package on the RT6600ax and created a master forward zone for domain name, with A records for all infrastructure hosts and the Proxmox cluster nodes including the planned new node.</li>
     <li>Validated DNS resolution from the Proxmox cluster using dig against the DNS server, confirming NOERROR responses for all host records and verifying /etc/resolv.conf was correctly populated via DHCP with the domain name search domain and correct nameserver entries.</li>
-    <li>Established DNS infrastructure as the foundation for the next phase: joining the new Proxmox node to the Proxmox cluster, which requires both nodes to resolve each other by hostname prior to cluster formation.</li>
   </ul>
 </div>
 
