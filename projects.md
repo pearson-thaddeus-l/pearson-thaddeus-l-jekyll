@@ -44,19 +44,6 @@ Welcome to my portfolio of featured work — a mix of builds, active automation,
 </div>
 
 <div class="neon-border project-card">
-  <h3>Hubitat Home Automation</h3>
-  <p>
-   Design and implement a secure home automation system using Hubitat hardware and Zigbee mesh networking.
-  </p>
-  <p><strong>Tech:</strong> Hubitat Model C-8 Pro, Zigbee Protocol, Mesh Networking, ZED Devices.</p>
-  <ul>
-    <li>In Progress.</li>
-    <li>In Progress.</li>
-    <li>In Progress.</li>
-  </ul>
-</div>
-
-<div class="neon-border project-card">
   <h3>Backblaze B2 Offsite Data Protection</h3>
   <p>
     Data Protection project to implement off-site backup of on-prem NAS storage server. In Progress.
