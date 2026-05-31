@@ -10,12 +10,6 @@ permalink: /projects/
 Welcome to my portfolio of featured work — a mix of builds, active automation, and ongoing experiments.
 </p>
 
----
-layout: default
-title: "Synology DNS Implementation"
-permalink: /projects/synology-dns/
----
-
 <div class="neon-border project-card">
   <h3>Synology DNS Implementation</h3>
   <p>
