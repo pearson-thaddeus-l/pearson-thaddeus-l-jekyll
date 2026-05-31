@@ -71,15 +71,16 @@ backblaze B2.</li>
 </div>
 
 <div class="neon-border project-card">
-  <h3>Proxmox Homelab Automation</h3>
+  <h3>Proxmox VE Lab Cluster</h3>
   <p>
-    Automates provisioning and lifecycle management of VMs on a Proxmox cluster using Bash scripts and YAML configurations.
+    Designed and built a full-stack lab virtualization platform from the ground up, starting with custom PC hardware assembly and progressing through bare-metal OS installation, Proxmox VE cluster configuration, and network integration. The cluster serves as the foundational infrastructure for all lab projects, hosting Linux VMs and LXC containers across a dedicated lab network.
   </p>
-  <p><strong>Tech:</strong> Bash, Proxmox API, YAML</p>
+  <p><strong>Tech:</strong> Proxmox VE, LXC, KVM, Debian, Custom PC Hardware, Network Configuration</p>
   <ul>
-    <li>Creates and networks new VMs from predefined templates</li>
-    <li>Integrates with Proxmox API for lightweight orchestration</li>
-    <li>Logs provisioning events and task output for auditing</li>
+    <li>Assembled a custom workstation-class server using an Intel i7-12700KF with ~32GB RAM and ~11.76TB storage, purpose-built for lab virtualization workloads.</li>
+    <li>Performed bare-metal installation and configuration of Proxmox VE, including storage pool setup, network bridge configuration, and cluster initialization.</li>
+    <li>Configured the Proxmox cluster to serve as the primary virtualization platform for the lab network, providing on-demand LXC containers and KVM virtual machines for infrastructure, development, and automation projects.</li>
+    <li>Established cluster networking on a flat TCP/IP lab network with the Synology RT6600ax as the upstream router, integrating DHCP reservations and local DNS for all cluster-hosted workloads.</li>
   </ul>
 </div>
 
