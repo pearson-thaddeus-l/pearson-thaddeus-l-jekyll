@@ -13,12 +13,12 @@ Welcome to my portfolio of featured work — a mix of builds, active automation,
 <div class="neon-border project-card">
   <h3>Synology DNS Implementation</h3>
   <p>
-    Designed and implemented a local DNS infrastructure on the Synology RT6600ax router to support hostname resolution across a flat lab network. This project was a prerequisite to expanding the Proxmox cluster from a single node to a multi-node configuration, which requires reliable bi-directional hostname resolution between cluster members. The implementation involved deliberate architectural decisions around DNS placement for high availability, DHCP reservation management, and forward zone configuration built to mirror enterprise DNS practices in a home lab environment.
+    Designed and implemented a local DNS infrastructure on the Synology RT6600ax router to support hostname resolution across a flat lab network. This project was a prerequisite to expanding the Proxmox cluster from a single node to a multi-node configuration, which requires reliable bi-directional hostname resolution between cluster members. The implementation involved deliberate architectural decisions around DNS placement for high availability, DHCP reservation management, and forward zone configuration built to mirror enterprise DNS practices in a lab environment.
   </p>
   <p><strong>Tech:</strong> Synology RT6600ax, Synology DNS Server, BIND9 (underlying), DHCPv4, DNS Forward Zone, Proxmox VE</p>
   <ul>
     <li>Evaluated DNS hosting options including a dedicated Proxmox LXC running BIND9, the Synology NAS, and the Synology RT6600ax router selected the router as the DNS host to ensure DNS availability is fully independent of Proxmox uptime, a critical consideration when DNS is required to bring cluster nodes online.</li>
-    <li>Simplified the home lab network from a segmented dual-subnet architecture (OPNsense-routed 10.0.0.x LAN + 192.168.1.x WAN) to a flat lab network network after decommissioning OPNsense and Pi-hole, requiring a full reassignment of all host IPs prior to DNS implementation.</li>
+    <li>Simplified the lab network from a segmented dual-subnet architecture (OPNsense-routed 10.0.0.x LAN + 192.168.1.x WAN) to a flat lab network network after decommissioning OPNsense and Pi-hole, requiring a full reassignment of all host IPs prior to DNS implementation.</li>
     <li>Configured DHCP reservations on the RT6600ax for all infrastructure hosts in Proxmox ensuring stable IP assignments across reboots and DHCP lease renewals.</li>
     <li>Updated DHCP scope options to distribute the new DNS server as the primary DNS server and 8.8.8.8 as the secondary fallback, with domain name set as the local domain name handed to all clients.</li>
     <li>Installed the Synology DNS Server package on the RT6600ax and created a master forward zone for domain name, with A records for all infrastructure hosts and the Proxmox cluster nodes including the planned new node.</li>
@@ -31,9 +31,9 @@ Welcome to my portfolio of featured work — a mix of builds, active automation,
 
 
 <div class="neon-border project-card">
-  <h3>Home Network Infrastructure & Firewall Architecture</h3>
+  <h3>Lab Network Infrastructure & Firewall Architecture</h3>
   <p>
-   Designed and implemented a segmented home network using OPNsense as the primary router and firewall, running virtualized on a Proxmox host. The project involved full network architecture design including subnet segmentation, inter-VLAN routing, DNS filtering, and DHCP services - built to mirror enterprise networking practices in a home lab environment.
+   Designed and implemented a segmented lab network using OPNsense as the primary router and firewall, running virtualized on a Proxmox host. The project involved full network architecture design including subnet segmentation, inter-VLAN routing, DNS filtering, and DHCP services - built to mirror enterprise networking practices in a lab environment.
   </p>
   <p><strong>Tech:</strong> OPNsense,Proxmox VE,KEA DHCPv4,Pi-hole,DNS,Static Routing,Network Segmentation</p>
   <ul>
@@ -41,7 +41,7 @@ Welcome to my portfolio of featured work — a mix of builds, active automation,
     <li>Architected a segmented network with a dedicated LAN subnet (10.x.x.x/24) isolated from the upstream ISP network, with a static route on the Synology router directing LAN-bound traffic through the OPNsense WAN interface.</li>
     <li>Configured KEA DHCPv4 on the OPNsense LAN to manage address allocation across the 10.x.x.100 - 200 pool with static reservations for infrastructure hosts.</li>
     <li>Integrated Pi-hole as the primary DNS server for the LAN, enforcing network-wide ad and tracker blocking with Cloudflare as the upstream fallback resolver.</li>
-    <li>Established inter-VLAN routing and firewall rules through OPNsense to control traffic flow between the virtualized LAN environment and the broader home network.</li>
+    <li>Established inter-VLAN routing and firewall rules through OPNsense to control traffic flow between the virtualized LAN environment and the broader lab network.</li>
   </ul>
 </div>
 
