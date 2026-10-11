@@ -13,17 +13,17 @@ Welcome to my portfolio of featured work — a mix of builds, active automation,
 <div class="neon-border project-card">
   <h3>AWS RDS Encryption at Rest</h3>
   <p>
-    Designed and proved a way to encrypt existing Amazon RDS MySQL databases that could not be encrypted in place. The goal was a compliance requirement for AES-256 at rest, with keys held in AWS KMS and rotated automatically each year, without breaking cross-account snapshot copies or removing the option to roll back. In progress: the path is validated in a lower environment. Production cutover is still ahead.
+    Contract DevOps work on a live AWS platform, adding encryption at rest to existing Amazon RDS MySQL databases for a compliance effort. The engagement was a chance to go deeper on KMS, CloudFormation, and Multi-AZ while the application stayed online. Lower-environment databases are encrypted and serving traffic. Production is still ahead. In progress.
   </p>
   <p><strong>Tech:</strong> Amazon RDS, MySQL, AWS KMS, CloudFormation, Route 53, Multi-AZ, read replicas</p>
   <ul>
-    <li>Inventoried the RDS fleet and wrote an encryption-by-service record of which application data stores inherit encryption from the database.</li>
-    <li>Mapped the release path AWS actually allows: an online snapshot, an encrypted copy of that snapshot, a restore to a new instance, a short DNS cutover, then new replicas built from the encrypted primary. A CloudFormation change that would replace the live instance was treated as unsafe.</li>
-    <li>Selected customer-managed KMS keys with automatic annual rotation. The default AWS-managed RDS key meets the cipher requirement, but snapshots encrypted with it cannot be shared to other accounts.</li>
-    <li>Split the key design so live production data stays on a key that is not shared, while snapshots that must move to lower environments use a separate key. Destination accounts recopy onto a local key so they do not depend on the source key at runtime.</li>
-    <li>Proved the path on a smaller database in a non-production account: encrypted restore, DNS cutover, and a check that the sites loaded, with the original instance left running for rollback.</li>
-    <li>Repeated it on the larger primary: Multi-AZ and one read replica first, then an encrypted copy restored as its own stack so it did not take the live exports, then a cutover of the internal database names to the new endpoint.</li>
-    <li>Drafted the template updates so the stacks record the encrypted settings after the manual change, and so a future change set is stopped if it would replace the database.</li>
+    <li>Inventoried the RDS fleet and published an encryption-by-service page for the primary, its replicas, and the application services that store data on them.</li>
+    <li>Created a customer-managed KMS key in the test account, symmetric AES-256, with automatic annual rotation turned on.</li>
+    <li>Stood up an isolated environment with the team scaffolder so the test did not run on the shared QA stack.</li>
+    <li>Matched the non-production primary to the production layout before encrypting it: Multi-AZ on, one read replica added. The first CloudFormation update rolled back on an export conflict; retargeted the read-only names and reran it to completion.</li>
+    <li>Brought up an encrypted replacement for the smaller application database, cut its name over, and confirmed the public sites loaded. Left the previous instance up for rollback.</li>
+    <li>Repeated the cutover for the primary database in that environment. Application traffic there now uses the encrypted instance.</li>
+    <li>Opened a draft infrastructure change so the database templates record the encrypted settings and stay in line with what is running.</li>
   </ul>
 </div>
 
