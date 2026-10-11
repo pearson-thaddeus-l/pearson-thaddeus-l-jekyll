@@ -11,6 +11,23 @@ Welcome to my portfolio of featured work — a mix of builds, active automation,
 </p>
 
 <div class="neon-border project-card">
+  <h3>AWS RDS Encryption at Rest</h3>
+  <p>
+    Designed and proved a way to encrypt existing Amazon RDS MySQL databases that could not be encrypted in place. The goal was a compliance requirement for AES-256 at rest, with keys held in AWS KMS and rotated automatically each year, without breaking cross-account snapshot copies or removing the option to roll back. In progress: the path is validated in a lower environment. Production cutover is still ahead.
+  </p>
+  <p><strong>Tech:</strong> Amazon RDS, MySQL, AWS KMS, CloudFormation, Route 53, Multi-AZ, read replicas</p>
+  <ul>
+    <li>Inventoried the RDS fleet and wrote an encryption-by-service record of which application data stores inherit encryption from the database.</li>
+    <li>Mapped the release path AWS actually allows: an online snapshot, an encrypted copy of that snapshot, a restore to a new instance, a short DNS cutover, then new replicas built from the encrypted primary. A CloudFormation change that would replace the live instance was treated as unsafe.</li>
+    <li>Selected customer-managed KMS keys with automatic annual rotation. The default AWS-managed RDS key meets the cipher requirement, but snapshots encrypted with it cannot be shared to other accounts.</li>
+    <li>Split the key design so live production data stays on a key that is not shared, while snapshots that must move to lower environments use a separate key. Destination accounts recopy onto a local key so they do not depend on the source key at runtime.</li>
+    <li>Proved the path on a smaller database in a non-production account: encrypted restore, DNS cutover, and a check that the sites loaded, with the original instance left running for rollback.</li>
+    <li>Repeated it on the larger primary: Multi-AZ and one read replica first, then an encrypted copy restored as its own stack so it did not take the live exports, then a cutover of the internal database names to the new endpoint.</li>
+    <li>Drafted the template updates so the stacks record the encrypted settings after the manual change, and so a future change set is stopped if it would replace the database.</li>
+  </ul>
+</div>
+
+<div class="neon-border project-card">
   <h3>Synology DNS Implementation</h3>
   <p>
     Designed and implemented a local DNS infrastructure on the Synology RT6600ax router to support hostname resolution across a flat lab network. This project was a prerequisite to expanding the Proxmox cluster from a single node to a multi-node configuration, which requires reliable bi-directional hostname resolution between cluster members. The implementation involved deliberate architectural decisions around DNS placement for high availability, DHCP reservation management, and forward zone configuration built to mirror enterprise DNS practices in a lab environment.
