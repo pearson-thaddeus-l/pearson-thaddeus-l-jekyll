@@ -13,7 +13,7 @@ Welcome to my portfolio of featured work — a mix of builds, active automation,
 <div class="neon-border project-card">
   <h3>AWS RDS Encryption at Rest</h3>
   <p>
-    Contract DevOps work on a live AWS platform, adding encryption at rest to existing Amazon RDS MySQL databases for a compliance effort. The engagement was a chance to go deeper on KMS, CloudFormation, and Multi-AZ while the application stayed online. Lower-environment databases are encrypted and serving traffic. In progress.
+    Contract DevOps work on a live AWS platform, adding encryption at rest to existing Amazon RDS MySQL databases for a compliance effort. The engagement is a chance to go deeper on KMS, CloudFormation, and Multi-AZ while the application stayed online. Lower-environment databases are encrypted and serving traffic. In progress.
   </p>
   <p><strong>Tech:</strong> Amazon RDS, MySQL, AWS KMS, CloudFormation, Route 53, Multi-AZ, read replicas</p>
   <ul>
