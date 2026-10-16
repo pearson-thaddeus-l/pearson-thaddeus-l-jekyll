@@ -11,6 +11,20 @@ Welcome to my portfolio of featured work — a mix of builds, active automation,
 </p>
 
 <div class="neon-border project-card">
+  <h3>AWS Elastic Load Balancer Encryption in Transit</h3>
+  <p>
+    Contract DevOps work on a live AWS platform, updating an internet-facing load balancer so traffic in transit uses a modern TLS policy for a compliance effort. The change was tried first in an isolated environment. The public site loaded, a real login succeeded, and a direct request to the load balancer still completed TLS. The listener in that environment now requires TLS 1.2 or newer. In progress.
+  </p>
+  <p><strong>Tech:</strong> Elastic Load Balancing, TLS, CloudFront, CloudFormation</p>
+  <ul>
+    <li>Found the public listener still offering an outdated TLS policy, while visitors already negotiated TLS 1.2 at the CDN.</li>
+    <li>Changed only the listener security policy in an isolated environment. Routing rules, the certificate, and the default response stayed as they were.</li>
+    <li>Confirmed the public site loaded, a login reached the application, and a direct request to the load balancer still completed TLS.</li>
+    <li>Added the policy to the infrastructure template so a later update does not recreate the listener on the old default.</li>
+  </ul>
+</div>
+
+<div class="neon-border project-card">
   <h3>AWS RDS Encryption at Rest</h3>
   <p>
     Contract DevOps work on a live AWS platform, adding encryption at rest to existing Amazon RDS MySQL databases for a compliance effort. The engagement is a chance to go deeper on KMS, CloudFormation, and Multi-AZ while the application stayed online. Lower-environment databases are encrypted and serving traffic. In progress.
